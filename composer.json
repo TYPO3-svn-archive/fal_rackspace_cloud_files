@@ -1,0 +1,16 @@
+{
+	"name": "tfe/fal-rackspace-cloudfiles",
+	"type": "typo3-cms-extension",
+	"description": "TFE FAL Rackspace",
+	"homepage": "",
+	"license": ["GPL-2.0+"],
+	"version": "",
+
+	"require": {
+		"typo3/cms/core": "*",
+		"rackspace/php-opencloud": "*"
+	},
+	"replace": {
+		"tfe_rackspace": "*"
+	}
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<ROOT>
+		<type>array</type>
+		<el>
+			<endpoint>
+				<TCEforms>
+					<label>Rackspace Identity Endpoint:</label>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">UK</numIndex>
+								<numIndex index="1">uk</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">US</numIndex>
+								<numIndex index="1">us</numIndex>
+							</numIndex>
+						</items>
+						<default>uk</default>
+						<eval>trim</eval>
+					</config>
+				</TCEforms>
+			</endpoint>
+			<username>
+				<TCEforms>
+					<label>Username:</label>
+					<config>
+						<type>input</type>
+						<size>30</size>
+						<eval>trim,required</eval>
+					</config>
+				</TCEforms>
+			</username>
+			<apiKey>
+				<TCEforms>
+					<label>API Key:</label>
+					<config>
+						<type>input</type>
+						<size>32</size>
+						<eval>trim,required</eval>
+					</config>
+				</TCEforms>
+			</apiKey>
+			<region>
+				<TCEforms>
+					<label>Region:</label>
+					<config>
+						<type>input</type>
+						<default>LON</default>
+						<size>5</size>
+						<maxSize>3</maxSize>
+						<eval>trim,required</eval>
+					</config>
+				</TCEforms>
+			</region>
+			<container>
+				<TCEforms>
+					<label>Container:</label>
+					<config>
+						<type>input</type>
+						<size>255</size>
+						<eval>trim,required</eval>
+					</config>
+				</TCEforms>
+			</container>
+			<publicBaseUrl>
+				<TCEforms>
+					<label>Public Base Url:</label>
+					<config>
+						<type>input</type>
+						<size>255</size>
+						<eval>trim</eval>
+					</config>
+				</TCEforms>
+			</publicBaseUrl>
+			<composerPath>
+				<TCEforms>
+					<label>Composer Path:</label>
+					<config>
+						<type>input</type>
+						<size>255</size>
+						<eval>trim</eval>
+					</config>
+				</TCEforms>
+			</composerPath>
+		</el>
+	</ROOT>
+</T3DataStructure>
